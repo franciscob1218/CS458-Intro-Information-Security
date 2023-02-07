@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "programing assignment 1"
+version = "0.1.0"
+description = "Creating a decryptor for a shift cypher"
+authors = ["franciscob1218 <franciscob1218@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
