@@ -5,6 +5,7 @@
 	Log in MYSQL:
   
 //code
+```sql
 
 		mysql -u root -pseedubuntu
     
@@ -13,10 +14,15 @@
 		mysql> show tables;
     
 	Use such a SQL query:
+  ```
   
 //code
 
+	```sql
+
 		select * from credential where Name='Alice';
+
+	```
 
 ![Untitled](Pics/task1.png)
 
@@ -57,6 +63,8 @@
 	inject statment to append a row to current database:
   
 //code
+
+```sql
 
 	INSERT INTO credential (name,eid) VALUES('abc', '17422');
   
@@ -109,18 +117,20 @@ EDIT profile can be run on line "http://www.seedlabsqlinjection.com/unsafe_edit_
   
 //backend code
 
+
+```js
 	$conn = getDB();
   
 	// Don't do this, this is not safe against SQL injection attack
 	$sql="";
   
-	if($input_pwd!='')
-  
-  {// In case password field is not empty.
+	if($input_pwd!=''){
+		
+		// In case password field is not empty.
   
 	$hashed_ = sha1($input_pwd);
   
-	//Update the password stored in the session.
+		//Update the password stored in the session.
   
 	$_SESSION['pwd']=$hashed_pwd;
   
@@ -128,9 +138,10 @@ EDIT profile can be run on line "http://www.seedlabsqlinjection.com/unsafe_edit_
   
 	}else{
   
-	// if passowrd field is empty.
+		// if passowrd field is empty.
   
-	$sql = "UPDATE credential SET nickname='$input_nickname',email='$input_email',address='$input_address',PhoneNumber='$input_phonenumber' where ID=$id;";}
+	$sql = "UPDATE credential SET nickname='$input_nickname',email='$input_email',address='$input_address',PhoneNumber='$input_phonenumber' where ID=$id;";
+	}
   
 	$conn->query($sql);
   
@@ -139,6 +150,7 @@ EDIT profile can be run on line "http://www.seedlabsqlinjection.com/unsafe_edit_
 	header("Location: unsafe_home.php");
   
 	exit();
+	```
 
 Updation will be on Phone Number field;
 
