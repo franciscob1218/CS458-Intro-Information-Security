@@ -147,7 +147,7 @@ EDIT profile can be run on line "http://www.seedlabsqlinjection.com/unsafe_edit_
 	header("Location: unsafe_home.php");
   
 	exit();
-	```
+```
 
 Updation will be on Phone Number field;
 
