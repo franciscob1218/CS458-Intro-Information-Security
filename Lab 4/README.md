@@ -18,7 +18,7 @@
 
 		select * from credential where Name='Alice';
 
-![Untitled](Pics/task%201.png)
+![Untitled](Pics/task1.png)
 
 ### Task 2:
 
@@ -50,7 +50,7 @@
   
 	4. Run this location on browser
 
-![Untitled](Pics/task%202.2.png)
+![Untitled](Pics/task2.2.png)
 
 --> Task 2.3
 
@@ -66,7 +66,7 @@
   
 	.PASSWORD: "" (blank field)
 
-![Untitled](Pics/task%202.3.png)
+![Untitled](Pics/task2.3.png)
 
 (optional lines)
 
@@ -101,7 +101,7 @@ EDIT profile can be run on line "http://www.seedlabsqlinjection.com/unsafe_edit_
     
 	Update Phone Number: ', Salary=1 where name='Boby' #
   
-  ![Untitled](Pics/task%203.2.png)
+  ![Untitled](Pics/task3.2.png)
   
 --> Task 3.3
 
@@ -148,5 +148,5 @@ Constuct Phone Number:', password='c0b656d5e415ca1a8e098a408f913ec229e120b6' whe
   
 Save it and changes works accordingly. 
 
-![Untitled](Pics/task%203.3.png)
+![Untitled](Pics/task3.3.png)
 
