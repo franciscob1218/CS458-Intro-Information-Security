@@ -149,13 +149,13 @@ EDIT profile can be run on line "http://www.seedlabsqlinjection.com/unsafe_edit_
 	exit();
 ```
 
-Updation will be on Phone Number field;
+	Updation will be on Phone Number field;
 
-Let Boby password as '123'. We must get SHA1 value of new password via some tool as: c0b656d5e415ca1a8e098a408f913ec229e120b6
+	Let Boby password as '123'. We must get SHA1 value of new password via some tool as: c0b656d5e415ca1a8e098a408f913ec229e120b6
   
-Constuct Phone Number:', password='c0b656d5e415ca1a8e098a408f913ec229e120b6' where name='Boby' #
+	Constuct Phone Number:', password='c0b656d5e415ca1a8e098a408f913ec229e120b6' where name='Boby' #
   
-Save it and changes works accordingly. 
+	Save it and changes works accordingly. 
 
 ![Untitled](Pics/task3.3.png)
 
